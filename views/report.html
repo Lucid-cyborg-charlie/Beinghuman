@@ -1,0 +1,70 @@
+{{> header}}
+  
+    <br>
+    <h3 style="text-align: center; color: crimson;"><u>Signaler des enfants abandonnés ou des orphelins se trouvant en difficultés</u></h3>
+    <br>
+ 
+      <form action="/reported" method="POST">
+        <div class="jumbotron mt-5" style="background-color: lightgoldenrodyellow;">
+            <div class="form-group">
+            <h4 style="text-align:left;color: crimson;"><u>Formulaire :</u></h4>  
+            <br>
+
+
+
+              <div class="row">
+                <div class="col">
+                  <input type="tel" class="form-control" placeholder="Tel" required   name="tel">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Adresse" required  name="adress">
+                </div>
+              </div>
+              <br>
+
+
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nom" required   name="name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Prenom" required   name="firstName">
+                </div>
+              </div>
+              <br>
+
+
+              <div class="form-group">
+                  <label for="Date">Date</label>
+                  <input type="date" class="form-control" id="date" name="date" required>
+              </div>
+                  <br>
+                  <label for="country">Pays</label>
+                  <input type="country" class="form-control" id="country" name="country" required>
+              </div>
+                  <br>
+              <div class="form-group">
+                    <label for="city">Ville</label>
+                    <input type="text" class="form-control" id="city" required>
+              </div>
+                  <br>
+              <div class="form-group">
+                <textarea name="description" rows="7" cols="80" id="description" placeholder="Description..." required></textarea>
+              </div>
+                  <br>
+                  <input style="background-color:white;" type="submit" class="btn btn-darck" value="Envoyer">
+            </div>   
+          </div>
+      </form>
+
+    <div>
+      <p class="lead"><strong>Note : </strong>En cas de fausse déclaration voici ce que dit la loi...</h5>
+      <p class="lead">
+        <strong>Article 441-1</strong> :   Modifié par Ordonnance n°2000-916 du 19 septembre 2000 - art. 3 (V) JORF 22 septembre 2000 en vigueur le 1er janvier 2002
+      Constitue un faux toute altération frauduleuse de la vérité, de nature à causer un préjudice et accomplie par quelque moyen que ce soit, dans un écrit ou tout autre support d'expression de la pensée qui a pour objet ou qui peut avoir pour effet d'établir la preuve d'un droit ou d'un fait ayant des conséquences juridiques.
+      Le faux et l'usage de faux sont punis de trois ans d'emprisonnement et de 45 000 euros d'amende.
+      </p>
+    </div>
+
+{{> footer}}
+

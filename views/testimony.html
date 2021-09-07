@@ -1,0 +1,47 @@
+
+
+{{> header}}
+  <br>
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="https://previews.123rf.com/images/michalknitl/michalknitl1701/michalknitl170100438/71003446-khulna-bangladesh-por-volta-de-julho-de-2012-crian%C3%A7as-nativas-jovens-com-cabelos-castanhos-e-olhos-cas.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+            <h2 style="color: crimson;" class="display-4">Nos témoignages...</h2>
+            <p style="color: black;">Chaque utilisateur a une histoire à raconter car être l'un des notres c'est venir en aide aux orphelins et aux enfants en difficultés...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+        <div class="jumbotron" style="border-radius: 100px;">
+            <h1 style="color: crimson;" class="display-4">HELLO WORLD !</h1>
+            <p class="lead">Oeuvrons à rendre le monde meilleur un peu plus chaque jours</p>
+            <hr class="my-4">
+            <p>les témoignages qui vous sont présenté si-dessous sont ceux des utilisateurs qui sont venu en aide à des enfants orphelins ou à des enfants démunis. De même il y'a aussi des témoignages des orphelins eux même racontant leurs propres histoires</p>
+            <p>Si vous êtes vous même en difficultés et que vous habitez dans un pays en voie de développement, que vous vivez dans une situation précaire, nous vous invitons vivement à nous écrire en vous rendant sur ce <a style="color: crimson;" href="/report">lien</a> afin que nous puission prendre contacte avec vous</p>
+          </div>
+    
+
+    <br>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" >
+            {{#results}}
+            <div class="col mb-3">
+                <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-header"><a href="/userTestimony{{id}}"><button type="button" class="btn btn-light">Lire...</button>
+                    </a></div>
+                    <div class="card-body">
+                    <h5 class="card-title">Témoignage de {{name}} {{firstName}}</h5>
+                    </div>
+                </div>
+            </div>
+            {{/results}}
+        </div>
+
+
+{{> footer}}

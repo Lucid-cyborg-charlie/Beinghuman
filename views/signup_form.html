@@ -1,0 +1,27 @@
+
+<div style="background-color:lightgoldenrodyellow">
+
+{{> header}}
+
+    <form action="/new" method="POST">
+      <div class="jumbotron mt-5" style="background-color:lightgoldenrodyellow">
+        <div class="form-group">
+        <label for="mail">Addresse email</label>
+        <input type="email" class="form-control" id="mail" name="mail" required>
+        </div>
+        <br>
+        <div class="form-group">
+        <label for="password">Mot de passe</label>
+        <input type="password" class="form-control" name ="password" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="country">Pays</label>
+            <input type="text" class="form-control" name ="country" required>
+        </div>
+        <br>
+        <input type="submit" class="btn btn-primary" value="créer">
+      </div>
+    </form>
+</div>
+{{> footer}}

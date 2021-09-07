@@ -1,0 +1,23 @@
+
+<div style="background-color:lightgoldenrodyellow">
+
+    {{> header}}
+    
+        <form action="/connexion" method="POST">
+            <div class="jumbotron mt-5" style="background-color: lightgoldenrodyellow;">
+                <div class="form-group">
+                    <label for="mail">Addresse email</label>
+                    <input type="email" class="form-control" id="mail" name="mail" required>
+                </div>
+                    <br>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" class="form-control" name ="password" required>
+                </div>
+                    <br>
+                    <input type="submit" class="btn btn-darck" value="Se connecter">
+            </div>   
+        </form>
+</div>
+    {{> footer}}
+    
